@@ -1,0 +1,9 @@
+name: Setup
+run-name: this sets up the repostitory to be deploied
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: npm install
+      - run: npm run build
